@@ -128,7 +128,7 @@ Siga os passos abaixo para operar o Data Logger:
 
 ### 📂 Código Fonte
 
-O código-fonte completo e comentado está disponível neste repositório. O nome do arquivo principal é `DataLogger.ino` (ou o nome que você deu ao seu sketch principal).
+O código-fonte completo e comentado está disponível neste repositório. O nome do arquivo principal é `sketch.ino`.
 
 Para compilar o projeto, você precisará da **Arduino IDE** e das seguintes bibliotecas:
 * `Wire` (geralmente já incluída)
