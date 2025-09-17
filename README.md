@@ -80,7 +80,8 @@ O sistema possui uma interface de usuário intuitiva, controlada por um potenci�
 
 O circuito foi montado conforme o diagrama abaixo, utilizando o simulador Wokwi para prototipagem e testes.
 
-![Diagrama Elétrico do Projeto](<img width="875" height="697" alt="imagem" src="https://github.com/user-attachments/assets/92973c61-73e0-42df-bd21-01b6c4425c30" />)
+![Diagrama Elétrico do Projeto](<img width="875" height="697" alt="image" src="https://github.com/user-attachments/assets/60a35e42-c5b6-4e42-a40b-e9ab54de9067" />
+)
 *Figura 1: Esquema de ligação dos componentes no Wokwi.*
 
 ---
