@@ -145,4 +145,4 @@ Você pode instalá-las facilmente através do **Gerenciador de Bibliotecas** da
 
 Assista ao nosso vídeo de 3 minutos apresentando as funcionalidades do Data Logger em ação!
 
-**(Inserir o link público do vídeo no YouTube aqui)**
+**([Link do vídeo no YouTube](https://youtu.be/JA6iKo2V_G0?si=zbDvlD2YHWJZ-WLT))**
