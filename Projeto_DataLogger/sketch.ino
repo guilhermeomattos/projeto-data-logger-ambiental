@@ -27,7 +27,7 @@ DateTime adjustedTime;
 
 // DHT (Sensor de temperatura e umidade)
 #define DHTPIN 13
-#define DHTTYPE DHT22
+#define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
 // LCD (Display I2C)
@@ -62,7 +62,7 @@ double t_max = 25.0; // Temperatura máxima (Celsius)
 double i_min = 0.0;  // Iluminação mínima (%)
 double i_max = 30.0; // Iluminação máxima (%)
 double u_min = 30.0; // Umidade mínima (%)
-double u_max = 60.0; // Umidade máxima (%)
+double u_max = 70.0; // Umidade máxima (%)
 
 // Variáveis auxiliares
 bool aux = true;
@@ -108,7 +108,7 @@ String Unidades[] =
 {
   "    Celsius    >", //0
   "<    Kelvin    >", //1
-  "<  Fahrenheit  >" //2
+  "<  Fahrenheit   " //2
 };
 
 //===================================================================================================================
@@ -278,7 +278,7 @@ void subMenu()
         // Converter valores para int para armazenamento
         int tempInt = (int)(temperatura * 100);
         int humiInt = (int)(umidade * 100);
-        int ilumiInt = (int)(iluminacao * 100);
+        int ilumiInt = (int)(iluminacao);
 
         // Escrever dados na EEPROM
         EEPROM.put(currentAddress, now.unixtime());
@@ -599,7 +599,7 @@ void get_log() {
         // Converter valores
         float temperature = tempInt / 100.0;
         float humidity = humiInt / 100.0;
-        float iluminacao = ilumiInt / 100.0;
+        float iluminacao = ilumiInt;
 
         // Verificar se os dados são válidos antes de imprimir
         if (timeStamp != 0xFFFFFFFF) { // 0xFFFFFFFF é o valor padrão de uma EEPROM não inicializada
